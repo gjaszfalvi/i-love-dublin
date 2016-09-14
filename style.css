@@ -1,0 +1,362 @@
+* {
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    font-family: roboto;
+}
+
+body {
+    scroll-behavior: smooth;
+}
+
+.container {
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+    max-width: 1280px;
+}
+
+#header {
+    height: 42em;
+    background: #c5d5cb;
+    text-align: center;
+}
+#headText {
+    color: white;
+    position: absolute;
+    left: 40%;
+    padding: 21% 19%;
+}
+#about {
+    height: 42em;
+    background: #9fa8a3;
+    text-align: center;
+}
+
+#left {
+    height: 42em;
+    width: 50%;
+    float: left;
+}
+
+#right {
+    height: 42em;
+    width: 50%;
+    float: right;
+    background: white;
+}
+
+#pages {
+    height: 42em;
+    background: #e9ece5;
+}
+
+#us {
+    height: 42em;
+    background: #b3c2bf;
+    color: white;
+    text-align: center; 
+}
+
+a .Marcel {
+    background-image: url('content/image/face1.png');
+    height: 200px;
+    width: 200px;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+a .Marcel:hover {
+    background-image: url('content/image/face1hover.png');
+    height: 200px;
+    width: 200px;
+}
+
+a .Gabor {
+    background-image: url('content/image/face2.png');
+    height: 200px;
+    width: 200px;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+a .Gabor:hover {
+    background-image: url('content/image/face2hover.png');
+    height: 200px;
+    width: 200px;
+}
+
+#contact {
+    height: 39em;
+    background: #FFF;
+}
+
+.faces{
+    text-align: center;
+    position: relative;
+    top: 20%;
+    transform-style: preserve-3d;
+    transform: translateZ(100px) scale(.67);
+}
+.faces a {
+        padding: 100px;
+}
+
+#intro {
+    text-align: center;
+    padding: 20px 40px;    
+}
+
+html {overflow-x:hidden;}
+		
+video, object {
+    top:0;left:0;
+    position:absolute;
+}
+
+
+ul {
+  list-style: none;
+}
+
+li {
+  display: inline-block;
+  width: 120px;
+  margin: 0px;
+  cursor: pointer;
+    color: grey;
+
+}
+
+li:hover {
+border-bottom: 1px solid #7ab900;
+  transition: all 0.3s ease;
+  color: white;
+}
+
+nav {
+  background: black;
+  z-index: 2;
+  text-align: center;
+  transition: opacity 0.7s ease;
+  opacity: 0.5;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 45px;
+  line-height: 42px;
+  transition: all 0.3s ease;
+}
+nav a {
+  text-decoration: none;
+    font-size: 17px;
+    color: inherit;
+}
+
+nav:hover {
+  opacity: 0.8;
+}
+
+.scrolled {
+  opacity: 0.3;
+  height: 30px;
+  line-height: 28px;
+}
+
+section {
+  max-width: 600px;
+  padding: 0 25px;
+  margin: 0 auto;
+  margin-top: 150px;
+  font-size: 1.2em;
+  line-height: 1.5;
+}
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 15; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    border-radius: 5px;
+    margin: auto;
+    height: 500px;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 70%;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#linkedin_logo {
+    padding: 5px 0px;
+    -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+    filter: grayscale(100%);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+#linkedin_logo:hover {
+    -webkit-filter: none; /* Chrome, Safari, Opera */
+    filter: none;
+} 
+
+
+.fond{padding-top:85px;top:0;left:0; right:0;bottom:0;}
+
+.style_prevu_kit
+{
+    display:inline-block;
+    border:0;
+    padding: 0; 
+    width:200px;
+    height:200px;
+    position: relative;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1); 
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1); 
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1);
+    transition: all 200ms ease-in;
+    transform: scale(1);   
+    -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+    filter: grayscale(100%);
+}
+.style_prevu_kit:hover
+{
+    box-shadow: 0px 0px 150px #000000;
+    z-index: 2;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1.15);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1.15);   
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1.15);
+    transition: all 200ms ease-in;
+    transform: scale(1.15);
+    -webkit-filter: none; /* Chrome, Safari, Opera */
+    filter: none;
+}
+
+#pages .section_content .section_text {
+    transform: translateZ(60px) scale(.8);
+    transform-origin: 50%;
+}
+
+.sq_span {
+	background: rgba(0,0,0,0.8);
+	color: white;
+	display: table;
+	width: 100%;
+        height: 60px;
+	left: 0;
+	opacity: 0;
+        margin: 0px !important;
+	position: absolute;
+	right: 0;
+	top: 141px;
+        -webkit-transition: all 300ms;
+	-moz-transition: all 300ms;
+	transition: all 300ms;
+	-webkit-transition-delay: 100ms;
+	-moz-transition-delay: 100ms;
+	transition-delay: 100ms;
+	z-index: 100;
+}
+
+.sq_span span {
+	display: table-cell;
+	font-size: 1.5em;
+	position: relative;
+        top: 20px;
+        -webkit-transition: all 300ms ease-out;
+	-moz-transition: all 300ms ease-out;
+	transition: all 300ms ease-out;
+	vertical-align: middle;
+}
+
+.fond .style_prevu_kit:hover .sq_span {
+	opacity: 0.7;
+}
+
+.fond .style_prevu_kit:hover .sq_span span {
+	-moz-transform: translateY(-20px);
+	-webkit-transform: translateY(-20px);
+	transform: translateY(-20px);
+}
+
+
+#footer {
+  background: black;
+  z-index: 2;
+  text-align: center;
+  transition: opacity 0.7s ease;
+  opacity: 0.3;
+  bottom: 0px;
+  left: 0;
+  width: 100%;
+  height: 45px;
+  line-height: 42px;
+  transition: all 0.3s ease;
+}
+#footer a {
+  text-decoration: none;
+    font-size: 17px;
+    color: inherit;
+}
+
+#footer:hover {
+  opacity: 0.7;
+}
+
+#mydiv3 {
+    color: white;
+}
+
+#mydiv3:hover {
+cursor: pointer;
+  	-webkit-stroke-width: 5.3px;
+      -webkit-stroke-color: #66afe9;
+      -webkit-fill-color: #66afe9;
+      text-shadow: 0 0 8px rgba(0,255,0, 0.6);
+}
+
+#law {
+    position: absolute;
+    width: 18%;
+    top: 150px;
+    right: 210px;
+}
+
+.mobile img {
+width: 100%;
+height: auto;
+}

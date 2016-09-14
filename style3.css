@@ -1,0 +1,126 @@
+/*
+headertitle
+*/
+#headertitle {
+    color: white;
+    font-size: 50px;
+}
+.section_text1 {
+  
+  margin-left: auto;
+    margin-right: auto;
+    transform: translateZ(40px) scale(.8);
+    transform-origin: 50% 600%;
+}
+.section_bg1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+/*
+description below header
+*/
+#description {
+    width: 85%;
+    height: 200px;
+    padding: 125px 25px;
+    border: 25px;
+    margin: 25px;
+    text-align: center;
+}
+
+.belowheader {
+    margin-left: auto;
+    margin-right: auto;
+    transform: translateZ(40px) scale(.88);
+    transform-origin: 100% 20%;
+    
+}
+
+/*
+1st content section where image on the right
+*/
+
+.section_image1 img {
+  display: block;
+  width: 100%;
+  height:300px;
+  max-width: 560px;
+  margin-left: auto;
+margin-right: auto;
+  
+ }
+ 
+.section:nth-child(2n) .section_image1 {
+    transform: translateZ(100px) scale(.67);
+    transform-origin: 100% 50%;
+}
+  
+  
+ /*
+content sections where image on the left
+*/
+
+.section_text, .section_image2 {
+  padding: 8%;
+}
+.section_image2 img {
+  display: block;
+  width: 100%;
+  max-width: 560px;
+  margin-left: auto;
+  margin-right: auto;
+}
+ .section_image2, .section_text {
+    padding: 3%;
+    -webkit-flex: 1;
+    flex: 1;
+  }
+  .section:nth-child(2n) .section_image2 {
+    transform: translateZ(100px) scale(.67);
+    transform-origin: 100% 50%;
+  }
+  .section:nth-child(2n+1) .section_image2 {
+    transform: translateZ(100px) scale(.67);
+    transform-origin: 100% 50%;
+  }
+
+
+
+.section_content1 {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.section_content1 {
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+  }
+  
+.section_content1 {
+    transform-style: preserve-3d;
+  }
+ /*
+general class items
+*/
+
+.buttonclass {
+background-color: #e87e24; 
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 15px 32px;
+  margin: 20px 0px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.buttonclass:hover {
+background-color: darkorange; 
+}

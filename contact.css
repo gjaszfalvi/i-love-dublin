@@ -1,0 +1,100 @@
+/* 
+ * the contact form was based on http://tuttoaster.com/create-an-ajaxjqueryphp-contact-form/
+ * but fixed and upgraded by
+ * @author Gabor Jaszfalvi
+ * 2016
+ */
+
+/*contact form*/
+#mask {
+background-color:#000;
+display:none;
+height:100%;
+left:0;
+position:absolute;
+top:0;
+width:100%;
+z-index:9000;
+}
+
+.contact_form {
+background-color:#fff;
+left:50%;
+margin-left:-300px;
+position:absolute;
+width:600px;
+z-index:9999;
+}
+
+#close {
+cursor:pointer;
+font-family:arial, sans-serif;
+font-size:20px;
+font-weight:700;
+line-height:24px;
+text-decoration:underline;
+text-align:right;
+padding:5px 30px 5px 5px;
+}
+
+#contact_header {
+font-size:32px;
+font-weight:300;
+line-height:50px;
+padding:5px 5px 10px 60px;
+}
+
+/* form components */
+input,textarea {
+border:1px solid silver;
+background-color:#fff;
+color:#404040;
+font-size:10px;
+font-family:Verdana, Arial, sans-serif;
+text-transform:uppercase;
+border-radius:5px;
+-moz-border-radius:5px;
+-webkit-border-radius:5px;
+margin:10px 0;
+padding:10px;
+}
+
+input:hover[type=text],input:focus[type=text],textarea:hover,textarea:focus {
+background-color:#E0E0E0;
+border:1px solid #000;
+}
+
+input[type=text],textarea {
+width:300px;
+}
+
+#submit {
+border:none;
+width: 87px;
+height: 41px;
+}
+
+#submit:hover {
+cursor:pointer;
+background-color:#E0E0E0;
+border:1px solid #000;
+
+}
+
+/* alert messages */
+.success,.error {
+display:none;
+font-size:15px;
+padding:5px 10px 5px 10px;
+margin: 10px;
+}
+
+.success {
+color:green;
+}
+
+.error {
+text-align: left;
+color: red;
+float: right;
+}
